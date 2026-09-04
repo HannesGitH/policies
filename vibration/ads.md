@@ -1,71 +1,126 @@
-**Privacy Policy**
+# Privacy Policy — Custom Vibrator / Haptic Test
 
-This privacy policy applies to the Custom Vibrator/ Haptic Test app (hereby referred to as "Application") for mobile devices that was created by Hannepps (hereby referred to as "Service Provider") as an Ad Supported service. This service is intended for use "AS IS".
+**Effective date:** 2026-09-04
+**Applies to:** the "Custom Vibrator / Haptic Test" mobile application (`hannepps.tools.vibrationtest`, the "App")
 
-**Information Collection and Use**
+## Who is responsible for your data
 
-The Application collects information when you download and use it. This information may include information such as
+The App is published by Hannepps ("we", "us"). For the purposes of the EU/UK General Data Protection Regulation, the data controller is:
 
-*   Your device's Internet Protocol address (e.g. IP address)
-*   The pages of the Application that you visit, the time and date of your visit, the time spent on those pages
-*   The time spent on the Application
-*   The operating system you use on your mobile device
+> _Hannes Hattenbach_
+> _Handjerystr. 71_
+> _12159 Berlin DE_
+> Email: hannepps@h-h.win
 
-The Application does not gather precise information about the location of your mobile device.
+## At a glance
 
-The Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:
+- The App is **ad-supported**. Ads are served by Google AdMob.
+- We have **no user accounts and no servers of our own**. We never see your name, email, or contacts.
+- We do **not** collect GPS or precise location.
+- Your vibration patterns, presets, and settings are stored **only on your device**.
+- You can remove ads permanently with a one-time in-app purchase.
 
-*   Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services.
-*   Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.
-*   Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.
+## What we do not collect
 
-The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.
+To be explicit, the App does not collect, request, or transmit:
 
-For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
+- Precise or GPS location. The App declares no location permission.
+- Your name, email address, phone number, contacts, or calendar.
+- Photos, camera, microphone, or files from your device.
+- Your vibration patterns, presets, favourites, or app settings. These are written to local storage on your device and are never uploaded to us. Uninstalling the App deletes them.
 
-**Third Party Access**
+The App requests only two Android permissions: `VIBRATE` (to drive the vibration motor) and `WAKE_LOCK` (to keep the screen awake while a pattern plays). Once ads are enabled it additionally declares the advertising-identifier permission described below.
 
-Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
+## What is collected, by whom, and why
 
-Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:
+We do not operate a backend. All data described here is collected directly by Google as our service provider, through SDKs embedded in the App.
 
-*   [AdMob](https://support.google.com/admob/answer/6128543?hl=en)
-*   [Google Analytics for Firebase](https://firebase.google.com/support/privacy)
+### 1. Advertising — Google AdMob
 
-The Service Provider may disclose User Provided and Automatically Collected Information:
+To show ads, the AdMob SDK processes:
 
-*   as required by law, such as to comply with a subpoena, or similar legal process;
-*   when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;
-*   with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.
+- **Your device's advertising identifier** (Google Advertising ID on Android, IDFA on iOS) — a resettable ID used to measure ad performance and, if you consent, to select relevant ads.
+- **Your IP address**, from which an **approximate location** (typically country- or city-level) may be inferred to serve region-appropriate ads and comply with local law. This is not GPS data and does not identify your address.
+- **Device and app information** such as device model, operating system version, language, and App version.
+- **Ad interaction data** such as which ads were shown, viewed, or tapped.
 
-**Opt-Out Rights**
+Google acts as an independent controller for some of this processing. See [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites) and the [AdMob/AdSense privacy notice](https://support.google.com/admob/answer/6128543).
 
-You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.
+### 2. Analytics — Google Analytics for Firebase
 
-**Data Retention Policy**
+The App includes Google Analytics for Firebase to understand how features are used and where the App is failing. It automatically collects:
 
-The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at hannepps@h-h.win and they will respond in a reasonable time.
+- A Firebase-generated **app instance ID**, and your device's advertising identifier.
+- **App usage events** — sessions, screens opened, features used, first open, App updates.
+- **Device and app information** — device model, operating system version, language, region, App version.
+- **Your IP address**, used by Google to derive coarse (country-level) location and then discarded or shortened per Google's retention rules.
 
-**Children**
+We only ever look at this in aggregate. See [Firebase's privacy and security information](https://firebase.google.com/support/privacy).
 
-The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.
+### 3. Purchases — Google Play Billing
 
-The Application does not address anyone under the age of 13\. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (hannepps@h-h.win) so that they will be able to take the necessary actions.
+If you buy the ad-free upgrade, the transaction is handled entirely by Google Play. **We never receive your payment details.** The App receives confirmation that the purchase succeeded and records a flag in local storage on your device so ads stay off. See [Google's Privacy Policy](https://policies.google.com/privacy).
 
-**Security**
+### 4. Ratings prompt
 
-The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.
+The App may ask you to rate it. The prompt is shown by the Google Play in-app review flow; any review you write goes to Google Play, not to us, and is governed by Google's terms.
 
-**Changes**
+## Legal bases for processing (EEA/UK)
 
-This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.
+- **Consent** (Art. 6(1)(a) GDPR) — for personalized advertising and for analytics where consent is required. You give or withhold this in the consent dialog shown on first launch, and you can change your mind at any time (see below).
+- **Legitimate interests** (Art. 6(1)(f) GDPR) — for non-personalized advertising, basic fraud and invalid-traffic prevention, and keeping the App working and secure.
+- **Contract** (Art. 6(1)(b) GDPR) — for processing your in-app purchase and honouring the ad-free entitlement.
 
-This privacy policy is effective as of 2026-01-19
+## Consent and personalized ads
 
-**Your Consent**
+If you are in the European Economic Area, the United Kingdom, or Switzerland, the App shows a consent dialog before any personalized ads or non-essential analytics are enabled, using a Google-certified consent management platform.
 
-By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.
+- If you **consent**, you may see personalized ads based on your advertising identifier.
+- If you **decline**, you will still see ads, but non-personalized ones — selected using coarse context such as your country rather than your interests. Basic measurement and anti-fraud processing still occurs, as permitted by law.
 
-**Contact Us**
+You can reopen the dialog and change your choice at any time from the App's settings.
 
-If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at hannepps@h-h.win.
+## Your choices and how to opt out
+
+- **Change your consent** — reopen the privacy options dialog in the App's settings.
+- **Turn off ad personalization system-wide** — Android: *Settings → Privacy → Ads → Delete advertising ID* (or *Opt out of Ads Personalization*). iOS: *Settings → Privacy & Security → Tracking*.
+- **Reset your advertising identifier** — this breaks the link to previously collected ad data. Android: *Settings → Privacy → Ads → Reset advertising ID*.
+- **Adjust Google's own ad settings** — [myadcenter.google.com](https://myadcenter.google.com).
+- **Remove ads entirely** — buy the one-time ad-free upgrade in the App. Once active, the ads SDK is not initialized and no advertising data is sent.
+- **Stop everything** — uninstall the App. This ends all collection and deletes all locally stored data.
+
+## Your rights
+
+Depending on where you live, you may have the right to access, correct, delete, restrict, or object to the processing of your personal data, to withdraw consent, and to data portability. To exercise these rights, email **hannepps@h-h.win** and we will respond within the period required by law (one month under the GDPR).
+
+Because we hold no accounts and no server-side records, we usually cannot identify you from an advertising identifier alone. For data held by Google, please also use Google's own privacy controls linked above, as Google is best placed to act on it. If you are unsatisfied with our response, you may lodge a complaint with your local data protection authority.
+
+### United States — California and similar state laws
+
+We do not sell personal information for money. However, sharing your advertising identifier with Google for personalized advertising may qualify as "sharing" for cross-context behavioral advertising under the CCPA/CPRA and similar state laws. You can exercise your right to opt out of this by declining consent in the App, disabling ad personalization in your device settings, or buying the ad-free upgrade. We do not knowingly process sensitive personal information, and we do not discriminate against users who exercise their rights.
+
+## International transfers
+
+Google processes data in the United States and other countries outside the EEA/UK. Where required, these transfers rely on the European Commission's Standard Contractual Clauses and, where applicable, the EU-U.S. Data Privacy Framework. See Google's privacy policy for details of its safeguards.
+
+## Retention
+
+We retain nothing ourselves, as we operate no servers or databases. Data collected by Google is retained according to Google's published retention policies — Firebase Analytics data is retained for the configured window (currently 2 months for user-level data) and advertising data per Google's ad data retention rules. Data stored locally on your device persists until you clear the App's storage or uninstall it.
+
+## Children
+
+The App is not directed to children under 13, and we do not knowingly collect personal information from them. The App is not enrolled in Google Play's Families programme, and ads are not served to users identified as children. If you believe a child has provided personal information through the App, contact **hannepps@h-h.win** and we will delete what we can and ask Google to do the same.
+
+## Security
+
+We minimise risk by design: there is no account to compromise, no server to breach, and no personal data at rest under our control. Data in transit to Google's services is encrypted using TLS. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+
+## Changes to this policy
+
+We may update this policy as the App or the law changes. Material changes will be announced in the App or in the release notes, and the effective date above will be updated. Where a change requires it, we will ask for your consent again.
+
+## Contact
+
+Questions about this policy or about privacy in the App:
+
+**Email:** hannepps@h-h.win
