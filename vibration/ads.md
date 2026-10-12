@@ -15,7 +15,7 @@ The App is published by Hannepps ("we", "us"). For the purposes of the EU/UK Gen
 ## At a glance
 
 - The App is **ad-supported**. Ads are served by Google AdMob. In the EEA, the UK and Switzerland these are *limited ads*, which use no advertising identifier.
-- **Usage statistics** (Google Analytics for Firebase) are **off in the EEA, the UK and Switzerland** unless you switch them on under *Privacy settings → Help improve the app*. Elsewhere they are on by default and you can switch them off in the same place.
+- **Usage statistics** (Google Analytics for Firebase) are **off in the EEA, the UK, Switzerland, Turkey, South Korea, China and India** unless you switch them on under *Privacy settings → Help improve the app*. In Canada, Japan and Brazil they are on by default and you can switch them off in the same place. Elsewhere they are on.
 - We have **no user accounts and no servers of our own**. We never see your name, email, or contacts.
 - We do **not** collect GPS or precise location.
 - Your vibration patterns, presets, and settings are stored **only on your device**.
@@ -53,8 +53,9 @@ The App can send usage statistics to Google Analytics for Firebase, a service of
 
 **When it is on:**
 
-- **In the EEA, the UK and Switzerland**, and wherever the App cannot rule out that you are there (see *How the App tells where consent is required*), it is **off** until you switch it on under *Privacy settings → Help improve the app* and confirm in the dialog that follows.
-- **Everywhere else** it is on by default, and you can switch it off in the same place.
+- **In the EEA, the UK, Switzerland, Turkey, South Korea, China and India**, and wherever the App cannot tell where you are (see *How the App tells where consent is required*), it is **off** until you switch it on under *Privacy settings → Help improve the app* and confirm in the dialog that follows.
+- **In Canada, Japan and Brazil** it is on by default, and you can switch it off in the same place.
+- **Everywhere else** it is on, and the App does not offer the setting.
 - Before that decision is made, nothing is collected.
 
 **What it collects while on:**
@@ -72,7 +73,7 @@ When you switch it off, collection stops and the app instance ID is deleted from
 
 ### How the App tells where consent is required
 
-To decide whether usage statistics may start without asking, the App checks on your device: the country of your Google Play or App Store account, the country of your mobile network and SIM card (Android only), your time zone, and your language and region setting. If any of these points to the EEA, the UK or Switzerland, or if they do not clearly point elsewhere, the App treats you as being there. This check runs entirely on your device; its inputs and result are not sent to us or anyone else. It also uses Google's consent SDK, which asks Google's servers whether consent rules apply in your region.
+To decide whether usage statistics may start without asking, the App checks on your device: the country of your Google Play or App Store account, the country of your mobile network and SIM card (Android only), your time zone, and your language and region setting. If any of these points to one of the countries above, the strictest rule among them applies; if none of them tells where you are, usage statistics stay off until you switch them on. This check runs entirely on your device; its inputs and result are not sent to us or anyone else. It also uses Google's consent SDK, which asks Google's servers whether consent rules apply in your region.
 
 ### 3. Purchases — Google Play Billing
 
@@ -97,7 +98,7 @@ The App never shows a consent dialog on its own.
 
 ## Your choices and how to opt out
 
-- **Usage statistics** — switch them on or off under *Privacy settings → Help improve the app* in the App's menu.
+- **Usage statistics** — switch them on or off under *Privacy settings → Help improve the app* in the App's menu, where the App offers it (see *Analytics*).
 - **Turn off ad personalization system-wide** — Android: *Settings → Privacy → Ads → Delete advertising ID* (or *Opt out of Ads Personalization*). iOS: *Settings → Privacy & Security → Tracking*.
 - **Reset your advertising identifier** — this breaks the link to previously collected ad data. Android: *Settings → Privacy → Ads → Reset advertising ID*.
 - **Adjust Google's own ad settings** — [myadcenter.google.com](https://myadcenter.google.com).
