@@ -1,6 +1,6 @@
 # Privacy Policy — Custom Vibrator / Haptic Test
 
-**Effective date:** 2026-10-12
+**Effective date:** 2026-10-15
 **Applies to:** the "Custom Vibrator / Haptic Test" mobile application (`hannepps.tools.vibrationtest`, the "App")
 
 ## Who is responsible for your data
@@ -14,7 +14,7 @@ The App is published by Hannepps ("we", "us"). For the purposes of the EU/UK Gen
 
 ## At a glance
 
-- The App is **ad-supported**. Ads are served by Google AdMob. In the EEA, the UK and Switzerland these are *limited ads*, which use no advertising identifier.
+- The App is **ad-supported**. Ads are served by Google AdMob. In the EEA, the UK and Switzerland these are *limited ads*, which use no advertising identifier, unless you allow more relevant ads in Google's consent form. In Canada, Japan and Brazil you can switch off personalized ads under *Privacy settings → More relevant ads*.
 - **Usage statistics** (Google Analytics for Firebase) are **off in the EEA, the UK, Switzerland, Turkey, South Korea, China and India** unless you switch them on under *Privacy settings → Help improve the app*. In Canada, Japan and Brazil they are on by default and you can switch them off in the same place. Elsewhere they are on.
 - We have **no user accounts and no servers of our own**. We never see your name, email, or contacts.
 - We do **not** collect GPS or precise location.
@@ -40,7 +40,7 @@ We do not operate a backend. All data described here is collected directly by Go
 
 To show ads, the AdMob SDK processes:
 
-- **Your device's advertising identifier** (Google Advertising ID on Android, IDFA on iOS) — a resettable ID used to measure ad performance and to select relevant ads. In the EEA, the UK and Switzerland, Google serves *limited ads* instead, which do not use it (see *Consent and personalized ads*).
+- **Your device's advertising identifier** (Google Advertising ID on Android, IDFA on iOS) — a resettable ID used to measure ad performance and to select relevant ads. Where the App requests non-personalized or limited ads (see *Consent and personalized ads*), ads are not selected based on it.
 - **Your IP address**, from which an **approximate location** (typically country- or city-level) may be inferred to serve region-appropriate ads and comply with local law. This is not GPS data and does not identify your address.
 - **Device and app information** such as device model, operating system version, language, and App version.
 - **Ad interaction data** such as which ads were shown, viewed, or tapped.
@@ -84,19 +84,25 @@ The App may ask you to rate it. The prompt is shown by the Google Play in-app re
 ## Legal bases for processing (EEA/UK)
 
 - **Consent** (Art. 6(1)(a) GDPR, and § 25(1) TDDDG in Germany for storing the app instance ID on your device) — for usage statistics. You give or withdraw it under *Privacy settings → Help improve the app*, at any time and with effect for the future. Giving it is voluntary; the App works the same either way.
-- **Legitimate interests** (Art. 6(1)(f) GDPR) — for limited ads, basic fraud and invalid-traffic prevention, checking on your device whether consent is required, and keeping the App working and secure.
+- **Consent** (Art. 6(1)(a) GDPR, and § 25(1) TDDDG in Germany) — for personalized ads in the EEA, the UK and Switzerland, given in Google's consent form where the App offers it (see *Consent and personalized ads*).
+- **Legitimate interests** (Art. 6(1)(f) GDPR) — for limited and non-personalized ads, basic fraud and invalid-traffic prevention, checking on your device whether consent is required, and keeping the App working and secure.
 - **Contract** (Art. 6(1)(b) GDPR) — for processing your in-app purchase and honouring the ad-free entitlement.
 
 ## Consent and personalized ads
 
-The App never shows a consent dialog on its own.
+The App never shows a consent dialog on its own. Where the App offers it, the setting *Privacy settings → More relevant ads* in the App's menu shows whether ads may currently be personalized. It is not shown if you bought the ad-free upgrade.
 
-- **In the EEA, the UK and Switzerland** you see Google's *limited ads*: ads selected without your advertising identifier and without storing or reading anything on your device for advertising. Google may still use cookies or local storage to detect invalid traffic and fraud, and uses your IP address to deliver the ad. Personalized ads are not offered there at the moment; if that changes, it will be an option you have to switch on yourself under *Privacy settings*, through a Google-certified consent management platform.
+- **In the EEA, the UK and Switzerland** you see Google's *limited ads* by default: ads selected without your advertising identifier and without storing or reading anything on your device for advertising. Google may still use cookies or local storage to detect invalid traffic and fraud, and uses your IP address to deliver the ad. Where the App offers it, tapping *More relevant ads* opens a consent form from Google, a Google-certified consent management platform, in which you can allow personalized ads and change or withdraw that choice later. Where no such form is available, the setting stays off.
+- **In Turkey, South Korea, China and India**, and wherever the App cannot tell where you are (see *How the App tells where consent is required*), the App requests non-personalized ads, which are selected using coarse context such as your country rather than your interests.
+- **In Canada, Japan and Brazil** ads may be personalized based on your advertising identifier. You can switch that off under *Privacy settings → More relevant ads*; the App then requests non-personalized ads.
 - **Everywhere else** ads may be personalized based on your advertising identifier. You can turn that off in your device settings (see below).
+
+Your choice about personalized ads is separate from your choice about usage statistics; neither affects the other.
 
 ## Your choices and how to opt out
 
 - **Usage statistics** — switch them on or off under *Privacy settings → Help improve the app* in the App's menu, where the App offers it (see *Analytics*).
+- **Personalized ads** — switch them on or off under *Privacy settings → More relevant ads* in the App's menu, where the App offers it (see *Consent and personalized ads*).
 - **Turn off ad personalization system-wide** — Android: *Settings → Privacy → Ads → Delete advertising ID* (or *Opt out of Ads Personalization*). iOS: *Settings → Privacy & Security → Tracking*.
 - **Reset your advertising identifier** — this breaks the link to previously collected ad data. Android: *Settings → Privacy → Ads → Reset advertising ID*.
 - **Adjust Google's own ad settings** — [myadcenter.google.com](https://myadcenter.google.com).
