@@ -69,8 +69,6 @@ The App can send usage statistics to Google Analytics for Firebase, a service of
 
 When you switch it off, collection stops and the app instance ID is deleted from your device. See [How Google uses information from sites or apps that use our services](https://policies.google.com/technologies/partner-sites) and [Firebase's privacy and security information](https://firebase.google.com/support/privacy).
 
-**Older versions:** versions of the App released between April 2023 and January 2026 included Google Analytics for Firebase without asking and without a way to switch it off. Updating the App to the current version ends this.
-
 ### How the App tells where consent is required
 
 To decide whether usage statistics may start without asking, the App checks on your device: the country of your Google Play or App Store account, the country of your mobile network and SIM card (Android only), your time zone, and your language and region setting. If any of these points to one of the countries above, the strictest rule among them applies; if none of them tells where you are, usage statistics stay off until you switch them on. This check runs entirely on your device; its inputs and result are not sent to us or anyone else. It also uses Google's consent SDK, which asks Google's servers whether consent rules apply in your region.
