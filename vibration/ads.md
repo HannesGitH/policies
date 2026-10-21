@@ -111,7 +111,7 @@ You can **report** someone else's public pattern from its menu. A report is stor
 
 To keep feedback and public patterns from being abused, the App uses two Firebase services, run by Google Ireland Ltd. on our behalf:
 
-- **Firebase Authentication** gives the App a random **anonymous ID** the first time you use public patterns or send feedback. You do not sign up, and it is not linked to your name, Google account, app instance ID or advertising identifier. It is stored on your device and in Firebase, together with when it was created and last used; clearing the App's data or uninstalling it ends its use, and a new one is created next time.
+- **Firebase Authentication** gives the App a random **anonymous ID** the first time you open the pattern gallery, open a pattern's menu, or send feedback; not before. You do not sign up, and it is not linked to your name, Google account, app instance ID or advertising identifier. It is stored on your device and in Firebase, together with when it was created and last used; clearing the App's data or uninstalling it ends its use, and a new one is created next time.
 - **Firebase App Check** confirms that requests come from the unmodified App on a genuine device. On Android it uses Google Play Integrity, on iOS Apple's App Attest or DeviceCheck: Google or Apple check your device and the App and return a short-lived token, which goes along with each request. Neither we nor Google's database learn anything about you from it.
 
 If either is not available on your device, the App works as usual, only without feedback and public patterns.
@@ -120,7 +120,7 @@ If either is not available on your device, the App works as usual, only without 
 
 - **Consent** (Art. 6(1)(a) GDPR, and § 25(1) TDDDG in Germany for storing the app instance ID on your device) — for usage statistics. You give or withdraw it under *Privacy settings → Help improve the app*, at any time and with effect for the future. Giving it is voluntary; the App works the same either way.
 - **Consent** (Art. 6(1)(a) GDPR, and § 25(1) TDDDG in Germany) — for personalized ads in the EEA, the UK and Switzerland, given in Google's consent form where the App offers it (see *Consent and personalized ads*).
-- **Legitimate interests** (Art. 6(1)(f) GDPR) — for storing and reading feedback you choose to send, to improve the App; for publishing patterns you choose to make public and showing them to others; for the anonymous ID and App Check, to protect these features from abuse; for limited and non-personalized ads, basic fraud and invalid-traffic prevention, checking on your device whether consent is required, and keeping the App working and secure.
+- **Legitimate interests** (Art. 6(1)(f) GDPR) — for storing and reading feedback you choose to send, to improve the App; for publishing patterns you choose to make public and showing them to others; for the anonymous ID and App Check, to protect these features from abuse (storing the ID on your device is strictly necessary for the feature you are using, § 25(2) TDDDG); for limited and non-personalized ads, basic fraud and invalid-traffic prevention, checking on your device whether consent is required, and keeping the App working and secure.
 - **Contract** (Art. 6(1)(b) GDPR) — for processing your in-app purchase and honouring the ad-free entitlement.
 
 ## Consent and personalized ads
@@ -156,11 +156,11 @@ We do not sell personal information for money. However, sharing your advertising
 
 ## International transfers
 
-Google processes data in the United States and other countries outside the EEA/UK. Feedback and public patterns are stored in Frankfurt, Germany, though Google may still access it from elsewhere to operate the service. Where required, these transfers rely on the European Commission's Standard Contractual Clauses and, where applicable, the EU-U.S. Data Privacy Framework. See Google's privacy policy for details of its safeguards.
+Google processes data in the United States and other countries outside the EEA/UK. Feedback and public patterns are stored in Frankfurt, Germany, though Google may still access it from elsewhere to operate the service. Anonymous IDs (Firebase Authentication) are not tied to a region and may be processed in the United States. Where required, these transfers rely on the European Commission's Standard Contractual Clauses and, where applicable, the EU-U.S. Data Privacy Framework. See Google's privacy policy for details of its safeguards.
 
 ## Retention
 
-Feedback you send is kept for as long as it helps us improve the App, public patterns until you take them back or for as long as the App offers them, and reports for as long as the pattern they concern; anonymous IDs are kept while in use. Any of these is deleted earlier on request (see *Your rights*). Apart from that we retain nothing ourselves. Data collected by Google is retained according to Google's published retention policies — Firebase Analytics data is retained for the configured window (currently 2 months for user-level data) and advertising data per Google's ad data retention rules. Your choice about usage statistics is stored on your device, like your other settings. Data stored locally on your device persists until you clear the App's storage or uninstall it.
+Feedback you send is kept for as long as it helps us improve the App, public patterns until you take them back or for as long as the App offers them, and reports for as long as the pattern they concern; anonymous IDs in Firebase until we delete them, at the latest when the App no longer offers these features. Any of these is deleted earlier on request (see *Your rights*). Apart from that we retain nothing ourselves. Data collected by Google is retained according to Google's published retention policies — Firebase Analytics data is retained for the configured window (currently 2 months for user-level data) and advertising data per Google's ad data retention rules. Your choice about usage statistics is stored on your device, like your other settings. Data stored locally on your device persists until you clear the App's storage or uninstall it.
 
 ## Children
 
