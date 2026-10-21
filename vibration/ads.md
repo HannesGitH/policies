@@ -19,7 +19,7 @@ The App is published by Hannepps ("we", "us"). For the purposes of the EU/UK Gen
 - We have **no user accounts and no servers of our own**. We never see your name, email, or contacts.
 - If you choose to **send feedback** from the App, its text is stored in our Google Firebase database in Frankfurt, Germany, without any identifier that links it to you or your device.
 - We do **not** collect GPS or precise location.
-- Your vibration patterns, presets, and settings are stored **only on your device**.
+- Your vibration patterns, presets, and settings are stored **only on your device**, unless you choose to **make a pattern public** — then everyone using the App can see and use it.
 - You can remove ads permanently with a one-time in-app purchase.
 
 ## What we do not collect
@@ -29,9 +29,9 @@ To be explicit, the App does not collect, request, or transmit:
 - Precise or GPS location. The App declares no location permission.
 - Your name, email address, phone number, contacts, or calendar.
 - Photos, camera, microphone, or files from your device.
-- Your vibration patterns, presets, favourites, or app settings. These are written to local storage on your device and are never uploaded to us. Uninstalling the App deletes them.
+- Your vibration patterns, presets, favourites, or app settings. These are written to local storage on your device and are never uploaded, except a pattern you choose to make public (see *Public patterns*). Uninstalling the App deletes them.
 
-The App declares these Android permissions: `VIBRATE` (to drive the vibration motor), `WAKE_LOCK` (to keep the device awake while a pattern plays), `FOREGROUND_SERVICE`, `FOREGROUND_SERVICE_SPECIAL_USE` and `POST_NOTIFICATIONS` (to keep playing in the background and show the notification that says so, only if you choose that setting), `INTERNET` (for ads, analytics and sending feedback), and the advertising-identifier permission (`AD_ID`) described below.
+The App declares these Android permissions: `VIBRATE` (to drive the vibration motor), `WAKE_LOCK` (to keep the device awake while a pattern plays), `FOREGROUND_SERVICE`, `FOREGROUND_SERVICE_SPECIAL_USE` and `POST_NOTIFICATIONS` (to keep playing in the background and show the notification that says so, only if you choose that setting), `INTERNET` (for ads, analytics, sending feedback and public patterns), and the advertising-identifier permission (`AD_ID`) described below.
 
 ## What is collected, by whom, and why
 
@@ -94,11 +94,21 @@ Each piece of feedback consists of:
 
 It is not linked to the app instance ID, your advertising identifier, or any other identifier, so we cannot tell which device sent it. Google processes your **IP address** to deliver it, but it is not stored with the feedback. Only we can read it; the App can add feedback but not read any back. We use it only to improve the App.
 
+### 6. Public patterns — Cloud Firestore
+
+If you tap *Make public* on one of your patterns and confirm, the pattern is stored in the same Cloud Firestore database as feedback (Google Ireland Ltd., on our behalf, region `europe-west3`, Frankfurt, Germany) and shown to everyone using the App, who can play it and save a copy. What is published:
+
+- the pattern's **name**, as you gave it — please do not put personal details in it;
+- its **curve** (intensity and duration of each step), **speed**, and whether it **repeats**;
+- the **time** it was published.
+
+Nothing identifies you or your device: no app instance ID, no advertising identifier, no account. Google processes your IP address to deliver the request, but it is not stored with the pattern. Your device keeps a list of the patterns it published, so they are not shown back to you and not published twice. A public pattern cannot be changed or removed from the App, not even by you; editing it afterwards only changes your own copy. To have one removed, email us its name and roughly when you published it. You can **report** someone else's public pattern from its menu. A report only adds one to the pattern's count and contains nothing about you; your device remembers which patterns it reported, so each can be reported once and is no longer shown to you. A pattern reported three times is hidden for everyone. We may also remove public patterns at any time, for example ones with offensive names.
+
 ## Legal bases for processing (EEA/UK)
 
 - **Consent** (Art. 6(1)(a) GDPR, and § 25(1) TDDDG in Germany for storing the app instance ID on your device) — for usage statistics. You give or withdraw it under *Privacy settings → Help improve the app*, at any time and with effect for the future. Giving it is voluntary; the App works the same either way.
 - **Consent** (Art. 6(1)(a) GDPR, and § 25(1) TDDDG in Germany) — for personalized ads in the EEA, the UK and Switzerland, given in Google's consent form where the App offers it (see *Consent and personalized ads*).
-- **Legitimate interests** (Art. 6(1)(f) GDPR) — for storing and reading feedback you choose to send, to improve the App; for limited and non-personalized ads, basic fraud and invalid-traffic prevention, checking on your device whether consent is required, and keeping the App working and secure.
+- **Legitimate interests** (Art. 6(1)(f) GDPR) — for storing and reading feedback you choose to send, to improve the App; for publishing patterns you choose to make public and showing them to others; for limited and non-personalized ads, basic fraud and invalid-traffic prevention, checking on your device whether consent is required, and keeping the App working and secure.
 - **Contract** (Art. 6(1)(b) GDPR) — for processing your in-app purchase and honouring the ad-free entitlement.
 
 ## Consent and personalized ads
@@ -126,7 +136,7 @@ Your choice about personalized ads is separate from your choice about usage stat
 
 Depending on where you live, you may have the right to access, correct, delete, restrict, or object to the processing of your personal data, to withdraw consent, and to data portability. To exercise these rights, email **hannepps@h-h.win** and we will respond within the period required by law (one month under the GDPR).
 
-Because we hold no accounts and our only server-side records are feedback stored without any identifier, we usually cannot identify you from an advertising identifier alone. To have feedback you sent deleted, email us roughly when you sent it and what it said. For data held by Google, please also use Google's own privacy controls linked above, as Google is best placed to act on it. If you are unsatisfied with our response, you may lodge a complaint with your local data protection authority.
+Because we hold no accounts and our only server-side records are feedback and public patterns, both stored without any identifier, we usually cannot identify you from an advertising identifier alone. To have feedback you sent deleted, email us roughly when you sent it and what it said. For data held by Google, please also use Google's own privacy controls linked above, as Google is best placed to act on it. If you are unsatisfied with our response, you may lodge a complaint with your local data protection authority.
 
 ### United States — California and similar state laws
 
@@ -134,11 +144,11 @@ We do not sell personal information for money. However, sharing your advertising
 
 ## International transfers
 
-Google processes data in the United States and other countries outside the EEA/UK. Feedback is stored in Frankfurt, Germany, though Google may still access it from elsewhere to operate the service. Where required, these transfers rely on the European Commission's Standard Contractual Clauses and, where applicable, the EU-U.S. Data Privacy Framework. See Google's privacy policy for details of its safeguards.
+Google processes data in the United States and other countries outside the EEA/UK. Feedback and public patterns are stored in Frankfurt, Germany, though Google may still access it from elsewhere to operate the service. Where required, these transfers rely on the European Commission's Standard Contractual Clauses and, where applicable, the EU-U.S. Data Privacy Framework. See Google's privacy policy for details of its safeguards.
 
 ## Retention
 
-Feedback you send is kept for as long as it helps us improve the App, and deleted earlier on request (see *Your rights*). Apart from that we retain nothing ourselves. Data collected by Google is retained according to Google's published retention policies — Firebase Analytics data is retained for the configured window (currently 2 months for user-level data) and advertising data per Google's ad data retention rules. Your choice about usage statistics is stored on your device, like your other settings. Data stored locally on your device persists until you clear the App's storage or uninstall it.
+Feedback you send is kept for as long as it helps us improve the App, and public patterns for as long as the App offers them; either is deleted earlier on request (see *Your rights*). Apart from that we retain nothing ourselves. Data collected by Google is retained according to Google's published retention policies — Firebase Analytics data is retained for the configured window (currently 2 months for user-level data) and advertising data per Google's ad data retention rules. Your choice about usage statistics is stored on your device, like your other settings. Data stored locally on your device persists until you clear the App's storage or uninstall it.
 
 ## Children
 
@@ -146,7 +156,7 @@ The App is not directed to children under 13, and we do not knowingly collect pe
 
 ## Security
 
-We minimise risk by design: there is no account to compromise and no server of our own to breach. The only data at rest under our control is feedback, stored without identifiers in Firestore, which only we can read. Data in transit to Google's services is encrypted using TLS. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.
+We minimise risk by design: there is no account to compromise and no server of our own to breach. The only data at rest under our control is feedback, which only we can read, and the patterns people made public, both stored without identifiers in Firestore. Data in transit to Google's services is encrypted using TLS. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.
 
 ## Changes to this policy
 
